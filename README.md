@@ -12,8 +12,7 @@ The project is a responsive single-page website that showcases a food delivery s
 
 ## Project Description
 
-This assignment assesses the front-end development skills of replicating a provided design using plain HTML and CSS. The project must be fully responsive on desktop, tablet, and mobile, without relying on frameworks. It's a crucial step in the interview process, evaluating attention to detail, design fidelity, and front-end proficiency.
-
+This assignment assesses the front-end development skills of replicating a provided design using plain HTML and CSS. The project must be fully responsive on desktop, tablet, and mobile, without relying on frameworks.
 ## Technologies Used
 
 The technologies used to build the project are:
