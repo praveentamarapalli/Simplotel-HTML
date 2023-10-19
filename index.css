@@ -1,5 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+/* Base Styles */
+
 * {
-  margin: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg-container {
@@ -7,162 +12,157 @@
   min-height: 100vh;
 }
 
-.nav-container {
+/* Navigation Styles */
+
+.nav-bar {
   background-color: #ffffff;
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 20px 20px;
+}
+
+.website-logo-container {
+  display: hidden;
+  width: 15%;
 }
 
 .nav-menu-section {
+  max-width: 70%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  width: 80%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
 .nav-item {
   font-size: 18px;
-  font-weight: 300;
-  margin-left: 15px;
-  font-family: "Georgia";
-}
-
-@media (min-width: 768px) {
-  .nav-item {
-    font-size: 24px;
-    font-weight: 300;
-    margin-left: 30px;
-    font-family: "Georgia";
-  }
+  font-weight: 500;
+  margin: 8px;
+  font-family: "Geneva";
 }
 
 .icons-container {
+  max-width: 15%;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 20%;
-  padding-right: 20px;
+  justify-content: center;
+  margin: 10px;
 }
 
 .icon {
-  font-size: 18px;
-  margin-right: 30px;
+  width: 18px;
+  margin: 8px 8px;
 }
 
-@media (min-width: 768px) {
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  .nav-item {
+    font-size: 24px;
+  }
+
   .icon {
-    font-size: 30px;
-    margin-right: 30px;
+    width: 30px;
   }
 }
 
-.lorem-top-section-container {
+/* Lorem Section Styles */
+
+.top-section-container {
   background-image: url("https://res.cloudinary.com/dmeqhiqbm/image/upload/v1683139991/img1_ipemqn.jpg");
-  width: 100%;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-.lorem-info-container {
-  background-color: #d57d76;
-  opacity: 0.7;
+.info-container {
+  background-color: rgba(240, 125, 118, 0.7);
   color: #ffffff;
   box-sizing: border-box;
   padding: 30px 50px 30px 30px;
-  margin-left: 40px;
-  width: 50%;
+  margin: 8%;
+  width: 80%;
 }
 
-.lorem-heading {
-  font-family: "Arial";
+.main-heading {
+  font-family: "Roboto";
   font-size: 32px;
   font-weight: 900;
-  color: #ffffff;
   margin-bottom: 10px;
 }
 
-.lorem-content {
-  font-family: "Lucida Sans Unicode";
+.main-content {
+  font-family: "Roboto";
   font-size: 18px;
-  color: #ffffff;
 }
 
-@media (min-width: 768px) {
-  .lorem-heading {
-    font-family: "Arial";
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  .info-container {
+    margin: 8%;
+    width: 50%;
+  }
+
+  .main-heading {
     font-size: 42px;
-    font-weight: 900;
-    color: #ffffff;
-    margin-bottom: 10px;
   }
 
-  .lorem-content {
-    font-family: "Lucida Sans Unicode";
+  .main-content {
     font-size: 24px;
-    color: #ffffff;
   }
 }
+
+/* Order Now Section Styles */
 
 .order-now-heading {
   font-size: 42px;
   text-align: center;
   margin: 40px 0px 20px 0px;
   color: #ffffff;
-  font-family: "Arial";
   font-weight: 900;
-}
-
-@media (min-width: 768px) {
-  .order-now-heading {
-    font-size: 54px;
-    text-align: center;
-    margin: 50px 0px 30px 0px;
-    color: #ffffff;
-    font-family: "Roboto";
-    font-weight: 900;
-  }
 }
 
 .menu-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
-@media (min-width: 768px) {
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
+  .order-now-heading {
+    font-size: 54px;
+    margin: 50px 0px 30px 0px;
+    font-family: "Verdana";
+  }
+
   .menu-container {
     padding: 30px;
-    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
   }
 }
 
 .menu-item-container {
   width: 300px;
   background-color: #ffffff;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 0px 50px 0px 50px;
   padding: 20px;
   margin: 25px;
+  overflow: hidden;
 }
 
 .menu-img {
   width: 100%;
   height: 300px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 50px;
+  border-radius: 0px 50px 0px 50px;
+  object-fit: cover;
 }
 
 .menu-item-heading {
@@ -171,7 +171,7 @@
   font-size: 26px;
   color: #000000;
   text-align: center;
-  margin: 10px 0px 10px 0px;
+  margin: 10px 0px;
 }
 
 .menu-item-description {
@@ -181,21 +181,15 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
   .menu-item-heading {
-    font-family: "Roboto";
-    font-weight: 800;
     font-size: 30px;
-    color: #000000;
-    text-align: center;
-    margin: 10px 0px 10px 0px;
   }
 
   .menu-item-description {
-    font-family: "Roboto";
     font-size: 20px;
-    color: #000000;
-    text-align: center;
   }
 }
 
@@ -205,29 +199,20 @@
 }
 
 .order-button {
-  padding: 20px 60px 20px 60px;
-  border-width: 0px;
+  padding: 20px 60px;
+  border: none;
   border-radius: 50px;
   font-weight: bold;
-  font-family: "Roboto";
   font-size: 20px;
   margin-top: 30px;
-  background-color: #ffffff;
-  background-size: cover;
-  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-@media (min-width: 768px) {
+/* Responsive Styles */
+
+@media screen and (min-width: 768px) {
   .order-button {
-    padding: 20px 60px 20px 60px;
-    border-width: 0px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-family: "Roboto";
+    padding: 20px 60px;
     font-size: 26px;
-    margin-top: 30px;
-    background-color: #ffffff;
-    background-size: cover;
-    opacity: 0.7;
   }
 }
